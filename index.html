@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <script type="text/javascript" src="app.js"></script>
+    <title>challengeOne</title>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo aplicacion encriptar">
+    </header>
+    <main>
+        <section class="seccion_1">
+            <textarea class="textarea" placeholder="Escribe tu texto"></textarea>
+            <div class="contenedor_botones">
+                <input type="button" value="Encriptar" class="boton_encriptar">
+                <input type="button" value="Desencriptar" class="boton_desencriptar">
+                <input type="button" value="Desencriptar" class="boton_Copiar">
+            </div>
+        </section>
+        <section class="seccion_2">
+            <div class="contenedor_imagen">
+                <img src="Muñeco.png" alt="Muñeco">
+            </div>
+            <div class="contenedor_subtitulo">
+                <h3>No se encontró ningun mensaje</h3>
+            </div>
+            <div class="contenedor_parrafo">
+                <p>Escribe el texto que desea encriptar o desencriptar</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        Reto Alura Latam
+    </footer>
+</body>
+<script>
+    var btn = document.querySelector ("#boton_encriptar")
+    btn.onclick = encriptar
+    var btn2 = document.querySelector ("#boton_desencriptar")
+    btn2.onclick = desencriptar
+    var btn3 = document.querySelector ("#boton_Copiar")
+    btn3.onclick = copiar
+</script>
+</html>
